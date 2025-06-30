@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moningi Vidya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+        <!-- Logo -->
+        <div class="flex items-center">
+            <a href="#" class="text-xl font-bold text-gray-900 flex items-center">
+            <span class="text-2xl text-purple-600">V</span>idya
+            </a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center space-x-8">
+            <a href="#home" class="nav-link active text-gray-900 hover:text-purple-600 px-3 py-2 text-sm font-medium">Home</a>
+            <a href="#about" class="nav-link text-gray-900 hover:text-purple-600 px-3 py-2 text-sm font-medium">About</a>
+            <a href="#skills" class="nav-link text-gray-900 hover:text-purple-600 px-3 py-2 text-sm font-medium">Skills</a>
+            <a href="#projects" class="nav-link text-gray-900 hover:text-purple-600 px-3 py-2 text-sm font-medium">Projects</a>
+            <a href="#contact" class="nav-link text-gray-900 hover:text-purple-600 px-3 py-2 text-sm font-medium">Contact</a>
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <div class="md:hidden flex items-center">
+            <button id="mobile-menu-button" class="text-gray-900 hover:text-purple-600 focus:outline-none">
+            <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="#home" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-purple-600">Home</a>
+        <a href="#about" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-purple-600">About</a>
+        <a href="#skills" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-purple-600">Skills</a>
+        <a href="#projects" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-purple-600">Projects</a>
+        <a href="#contact" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-purple-600">Contact</a>
+        </div>
+    </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-16 md:pt-32 md:pb-24 hero-gradient text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Hi, I'm <span class="text-yellow-300">Vidya</span></h1>
+                    <div class="typewriter text-2xl md:text-3xl mb-6">
+                        <span id="typewriter-text"></span>
+                    </div>
+                    <p class="text-lg mb-8">Blending code and data to deliver intelligent solutions — from FastAPI services to Power BI dashboards.</p>
+                    <div class="flex space-x-4">
+                        <a href="#projects" class="bg-white text-purple-600 hover:bg-purple-100 px-6 py-3 rounded-lg font-medium transition duration-300">View My Work</a>
+                        <a href="#contact" class="border-2 border-white text-white hover:bg-white hover:text-purple-600 px-6 py-3 rounded-lg font-medium transition duration-300">Contact Me</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="./assets/Profile.jpg" alt="Vidya" class="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-white shadow-xl floating">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-2">About <span class="text-purple-600">Me</span></h2>
+                <div class="w-20 h-1 bg-purple-600 mx-auto"></div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+                    <img src="./assets/Profile 2.jpg" alt="Working Person" class="rounded-lg w-full max-w-md shadow-lg">
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Who am I?</h3>
+                    <p class="text-gray-600 mb-6 text-justify">
+                        I'm a tech enthusiast with hands-on experience in backend development, data engineering, and visualization. I'm currently expanding my skill set in <strong>Databricks</strong> and <strong>Power BI</strong> to bridge data science and business intelligence.
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-server text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Backend Development</h4>
+                                <p class="text-gray-600">Experienced in building REST APIs with FastAPI and Java.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-database text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Data Handling</h4>
+                                <p class="text-gray-600">Skilled in SQL Server and data pipelines; learning Databricks.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-chart-line text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Data Visualization</h4>
+                                <p class="text-gray-600">Proficient in MS Excel; diving deeper into Power BI.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-cogs text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Problem Solving</h4>
+                                <p class="text-gray-600">Driven by logic and curious about scalable tech solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://drive.google.com/file/d/1D5b47z9MNd45JKHrDpI55T9nm11EBkKz/view?usp=sharing" target="_blank" class="inline-flex items-center text-purple-600 font-medium">
+                        Download Resume
+                        <i class="fas fa-download ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-2">My <span class="text-purple-600">Skills</span></h2>
+                <div class="w-20 h-1 bg-purple-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Skill Card 1 -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-purple-600 text-4xl mb-4">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">HTML5</h3>
+                    <p class="text-gray-600">Semantic markup and accessibility best practices.</p>
+                    <div class="mt-4">
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-purple-600 h-2.5 rounded-full" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Skill Card 2 -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-purple-600 text-4xl mb-4">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">CSS3</h3>
+                    <p class="text-gray-600">Modern layouts, animations, and responsive design.</p>
+                    <div class="mt-4">
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-purple-600 h-2.5 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Skill Card 3 -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-purple-600 text-4xl mb-4">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Python</h3>
+                    <p class="text-gray-600">Object Oriented Concepts</p>
+                    <div class="mt-4">
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-purple-600 h-2.5 rounded-full" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Skill Card 4 -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-purple-600 text-4xl mb-4">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">FastAPI</h3>
+                    <p class="text-gray-600">Building high-performance REST APIs with Python.</p>
+                    <div class="mt-4">
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-purple-600 h-2.5 rounded-full" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <!-- Skill Card 5 -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-purple-600 text-4xl mb-4">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Java</h3>
+                    <p class="text-gray-600">Object-oriented programming, data structures, and backend development.</p>
+                    <div class="mt-4">
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-purple-600 h-2.5 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Skill Card 6 -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-purple-600 text-4xl mb-4">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">SQL Server</h3>
+                    <p class="text-gray-600">Database design, T-SQL queries, and performance tuning.</p>
+                    <div class="mt-4">
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-purple-600 h-2.5 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Card 7 -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-purple-600 text-4xl mb-4">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Power BI</h3>
+                    <p class="text-gray-600">Interactive dashboards, data modeling, and DAX expressions.</p>
+                    <div class="mt-4">
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-purple-600 h-2.5 rounded-full" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Card 8 -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-purple-600 text-4xl mb-4">
+                        <i class="fas fa-file-excel"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">MS Excel</h3>
+                    <p class="text-gray-600">Advanced formulas, pivot tables, and data analysis.</p>
+                    <div class="mt-4">
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-purple-600 h-2.5 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-2">Featured <span class="text-purple-600">Projects</span></h2>
+                <div class="w-20 h-1 bg-purple-600 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Here are some of my recent projects that showcase my skills and expertise.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://images.unsplash.com/photo-1662973280146-e6a09d317dc1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW4lMjBza2lufGVufDB8fDB8fHwy" alt="Project 1" class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                        <div class="absolute inset-0 bg-purple-600 bg-opacity-70 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+                            <a href="#" class="text-white font-medium px-4 py-2 border-2 border-white rounded-lg hover:bg-white hover:text-purple-600 transition duration-300">View Details</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Skin Cancer Detection</h3>
+                        <p class="text-gray-600 mb-4 text-justify">Skin Cancer Detection is a machine learning system that analyzes medical images to identify and classify skin cancer. It aids early diagnosis by detecting malignant and benign lesions with high accuracy.
+</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm">Python</span>
+                            <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm">Machine Learning</span>
+                            <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm">Image Processing</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://images.unsplash.com/photo-1579528115076-21788054443d?q=80&w=725&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project 2" class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                        <div class="absolute inset-0 bg-purple-600 bg-opacity-70 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+                            <a href="#" class="text-white font-medium px-4 py-2 border-2 border-white rounded-lg hover:bg-white hover:text-purple-600 transition duration-300">View Details</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Flight Price Prediction</h3>
+                        <p class="text-gray-600 mb-4 text-justify">Flight Price Prediction uses machine learning to forecast airline ticket prices based on factors like time, airline, and route, helping users find the best time to book.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm">Python</span>
+                            <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm">Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-purple-600 hover:bg-purple-700 transition duration-300">
+                    View All Projects
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-2">
+                Get in <span class="text-purple-600">Touch</span>
+            </h2>
+            <div class="w-20 h-1 bg-purple-600 mx-auto mb-6"></div>
+            <p class="text-gray-600 mb-8">
+                Have a project in mind or just want to say hello? Feel free to reach out via email.
+            </p>
+            <a href="mailto:moningividya04@gmail.com" class="inline-block px-6 py-3 text-white bg-purple-600 rounded-md hover:bg-purple-700 transition duration-300 text-lg font-medium">
+                Email Me
+            </a>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+
+</html>
